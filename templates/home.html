@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <h2>Finance Info</h2>
+    <form action="/stock" method="POST">
+      <label for="name">Please enter stock name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter stock name"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    {% block content %} {% endblock content %}
+  </body>
+</html>

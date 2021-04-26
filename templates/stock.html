@@ -1,0 +1,14 @@
+{% extends "home.html" %} {% block content %} {% if data is mapping %}
+<table>
+  {% for key, value in data.items() %}
+
+  <tr>
+    <th>{{ key }}</th>
+    <td>{{ value }}</td>
+  </tr>
+
+  {% endfor %}
+</table>
+{% else %}
+<p style="color: red">{{data}}</p>
+{% endif %} {% endblock content %}
